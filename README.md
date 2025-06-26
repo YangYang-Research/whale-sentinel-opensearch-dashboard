@@ -4,7 +4,33 @@ This guide helps you set up the **Whale Sentinel** OpenSearch Dashboard for visu
 
 ---
 
-## 📊 Step-by-Step Setup
+## ⚙️ Setup OpenSearch Stack
+
+### 1. Prepare Docker Compose File
+
+- Copy the example configuration to an active file:
+
+```bash
+  cp docker-compose.example.yml docker-compose.yml
+```
+
+- Open docker-compose.yml and update the environment variable: `OPENSEARCH_INITIAL_ADMIN_PASSWORD: your-strong-password`
+Replace your-strong-password with a secure password of your choice.
+
+### 2. Start OpenSearch Stack
+
+Run the following command to start OpenSearch and its dashboard:
+
+```bash
+docker-compose up -d
+```
+
+This will launch all services in the background.
+
+
+---
+
+## 📊 Configure OpenSearch Dashboard
 
 ### 1. Create Index Pattern
 
