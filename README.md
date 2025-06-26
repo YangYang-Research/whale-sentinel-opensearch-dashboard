@@ -11,7 +11,7 @@ This guide helps you set up the **Whale Sentinel** OpenSearch Dashboard for visu
 - Copy the example configuration to an active file:
 
 ```bash
-  cp docker-compose.example.yml docker-compose.yml
+cp docker-compose.example.yml docker-compose.yml
 ```
 
 - Open docker-compose.yml and update the environment variable: `OPENSEARCH_INITIAL_ADMIN_PASSWORD: your-strong-password`
@@ -34,8 +34,7 @@ This will launch all services in the background.
 
 ### 1. Create Index Pattern
 
-- Navigate to:  
-  **Sidebar → Dashboards Management → Index Patterns**
+- Navigate to:  **Sidebar → Dashboards Management → Index Patterns**
 - Click **Create index pattern**
 - Set the index name as: `whale-sentinel-*-logs`
 - Complete the steps to save the index pattern.
@@ -44,8 +43,7 @@ This will launch all services in the background.
 
 ### 2. Import Dashboards & Visualizations
 
-- Navigate to:  
-**Sidebar → Dashboards Management → Saved Objects**
+- Navigate to:  **Sidebar → Dashboards Management → Saved Objects**
 - Click **Import**
 - Upload the file: `templates/dashboard&visualization.ndjson`
 - Confirm and overwrite if prompted.
